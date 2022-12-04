@@ -9,6 +9,15 @@
     <link href= "/public/assets/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1 id="pageHeading">Online Timer</h1>
+    <div class="container mt-5">
+        <h1 id="pageHeading">Edit Timer</h1>
+        <form action="" method="POST" id="inputForm" class="mt-5 form-inline">
+            <label for="Hours"></label>
+            <input placeholder="Hours" type="number" name="Hours" min="0" max="59" id="input" class="form-control-lg">
+            <input placeholder="Minutes" type="number" name="Minutes" min="0" max="59" id="input" class="form-control-lg">
+            <input placeholder="Seconds" type="number" name="Seconds" min="0" max="59" id="input" class="form-control-lg">
+            <button class="btn btn-success btn-lg" type="submit" id="btn">Set</button>
+        </form>
+    </div>
 </body>
 </html>

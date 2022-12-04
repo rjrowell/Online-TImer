@@ -1,6 +1,13 @@
 #pageHeading{
-    
-    margin-left: 190px;
-    bottom: 700px;
+    text-align: center;
     font-size: 75px;
+}
+#inputForm{
+    text-align: center;
+}
+#input{
+    text-align: center;
+}
+#btn{
+    position: relative;
 }
