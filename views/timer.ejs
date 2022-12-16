@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/public/assets/utils.js"></script>
+    <script data-data="<%= JSON.stringify(data) %>">
+        const data = JSON.parse(document.currentScript.dataset.data);
+    </script>
+    <script>
+        setInterval(function counter(){
+        let timeLeft = counting(data)//TODO display time left on page 
+        document.getElementById("time").innerHTML = timeLeft;
+    }, 1000);
+    </script>
     <title>Document</title>
 </head>
 <body>
