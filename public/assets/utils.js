@@ -17,8 +17,12 @@
     }
 
   function counting(data){
-      timeLeft = data -  new Date().getTime();
-      timeLeft = msToTime(timeLeft);
+      timeLeft = data -  new Date().getTime(); 
+      if(timeLeft < 0){
+        timeLeft = "Times Up!";
+      }else{
+        timeLeft = msToTime(timeLeft);
+      };
       return timeLeft;
   }
 
