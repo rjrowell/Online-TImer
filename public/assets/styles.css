@@ -1,21 +1,35 @@
 .header{
     height: 75px;
+    background-color: rgb(75, 75, 75);
 }
-.container{
+.middle{
     min-height: calc(100vh - 150px);
+    background-color: black;
 }
 .footer{
     position: relative;
     height: 75px;
     bottom: 100%;
+    background-color: black;
 }
-
+#title{
+    position: relative; 
+    top: 20px; 
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 45px;
+    color: aliceblue;
+}
 #pageHeading{
+    position: relative;
     text-align: center;
+    top: 145px;
     font-size: 75px;
+    color: aliceblue;
 }
 #inputForm{
+    position: relative;
     text-align: center;
+    top: 150px;
 }
 #input{
     text-align: center;
